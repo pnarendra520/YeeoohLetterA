@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <yeeooh.android.app.com.yeeoohnewapp.views.CustomTextView
+        android:id="@+id/txt_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="fgjfdk"
+        android:gravity="center"/>
+    <yeeooh.android.app.com.yeeoohnewapp.views.CustomTextView
+        android:id="@+id/txt_scnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="fgjfdk"
+        android:gravity="center"/>
+    <yeeooh.android.app.com.yeeoohnewapp.views.CustomTextView
+        android:id="@+id/txt_thrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="fgjfdk"
+        android:gravity="center"/>
+
+</LinearLayout>

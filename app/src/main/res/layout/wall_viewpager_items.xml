@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/wall_item_imageView"
+            android:layout_width="110dp"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dock" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/wall_item_textview"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="monospace"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="narendra \nYeeooh \nlabs "
+            />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="110dp"
+    android:layout_marginTop="-23dp"
+    android:layout_height="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"
+        android:paddingLeft="5dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

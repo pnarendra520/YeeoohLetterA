@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFFFF"
+    android:layout_height="match_parent">
+
+<include
+    layout="@layout/toolbar"
+    android:id="@+id/letter"  />
+    <include
+        layout="@layout/search_toolbar"
+        android:visibility="gone"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/letter"
+            android:id="@+id/vi"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabSelectedTextColor="@color/app_main_colour"
+            app:tabIndicatorColor="@color/app_main_colour"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabTextColor="@color/app_bottom_color_gray"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    <yeeooh.android.app.com.yeeoohnewapp.views.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_below="@+id/vi"
+        android:id="@+id/viewpager"
+        android:layout_height="match_parent"
+        >
+    </yeeooh.android.app.com.yeeoohnewapp.views.CustomViewPager>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="email"
+            android:id="@+id/email"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="pincode"
+            android:id="@+id/pincode"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="city"
+            android:textColor="@color/white"
+            android:id="@+id/city"
+            android:layout_height="match_parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="city"
+            android:textColor="@color/white"
+            android:id="@+id/id"
+            android:layout_height="match_parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="location"
+            android:id="@+id/location"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="phone"
+            android:textColor="@color/white"
+            android:id="@+id/phone"
+            android:layout_height="match_parent"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="state"
+            android:textColor="@color/white"
+            android:id="@+id/state"
+            android:layout_height="match_parent"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/circle1"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/name"
+            />
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/address"
+    android:textColor="@color/app_bottom_color_gray"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038"
+
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_margin="8dp"
+        android:id="@+id/edit"
+        android:textColor="@color/app_bottom_color_gray"
+        android:gravity="center"
+        android:paddingRight="1dp"
+     android:layout_marginRight="10dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/navi"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

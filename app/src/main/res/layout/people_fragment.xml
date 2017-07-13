@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabSelectedTextColor="#1171a9"
+        app:tabIndicatorColor="#1171a9"
+        app:tabTextColor="#848080"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        android:layout_height="wrap_content" />
+
+
+    <yeeooh.android.app.com.yeeoohnewapp.views.CustomViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+    </yeeooh.android.app.com.yeeoohnewapp.views.CustomViewPager>
+
+</LinearLayout>

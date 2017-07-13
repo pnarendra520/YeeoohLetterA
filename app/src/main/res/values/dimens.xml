@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="activity_textsize">10dp</dimen>
+    <dimen name="activity_padding">5dp</dimen>
+    <dimen name="activity_padding1">15dp</dimen>
+    <dimen name="activity_registration_size">2sp</dimen>
+    <dimen name="cpv_required_padding">6dp</dimen>
+    <dimen name="cpv_dialog_preview_width">66dp</dimen>
+    <dimen name="cpv_dialog_preview_height">34dp</dimen>
+    <dimen name="cpv_column_width">58dp</dimen>
+    <dimen name="cpv_item_size">50dp</dimen>
+    <dimen name="cpv_item_horizontal_padding">8dp</dimen>
+    <dimen name="cpv_color_preference_normal">28dp</dimen>
+    <dimen name="cpv_color_preference_large">40dp</dimen>
+    <dimen name="widh">100dp</dimen>
+
+</resources>

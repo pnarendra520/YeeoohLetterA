@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="#e1f15bb0"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fitsSystemWindows="true"
+
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@drawable/dock"
+    android:scaleType="fitXY"
+    android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                app:layout_collapseMode="parallax"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <yeeooh.android.app.com.yeeoohnewapp.polygon.PolygonImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/cat"
+                    app:poly_vertices="6"
+                    app:poly_border_width="5dp"
+                    app:poly_corner_radius="5"
+                    app:poly_rotation_angle="90"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/profile_imageview"
+                    app:poly_border="true"
+                    app:poly_shadow="true"
+                    app:poly_shadow_color="@color/colortabs"
+                    app:poly_border_color="@color/colortabs"
+                    android:layout_height="100dp" />
+               <!-- <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="13dp"
+                    android:id="@+id/narendra"
+                    android:src="@drawable/dock"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/polygon"/>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-55dp"
+                    android:layout_toRightOf="@+id/profile_imageview"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sudha Praveen"
+                        android:id="@+id/profile_name"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="22dp"
+                        android:textColor="@color/Black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textStyle="bold"
+                        android:id="@+id/profile_name1"
+                        android:gravity="center"
+                        android:textSize="8sp"
+                        android:background="@drawable/backchat"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/white"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email"
+                    android:id="@+id/inbox"
+                  android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/notificationvali"
+                    android:layout_toLeftOf="@+id/inbox"
+                    android:id="@+id/notification"
+
+                    />
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colortabs"
+            app:tabIndicatorColor="@color/white"
+            android:layout_marginTop="1dp"
+            app:tabIndicatorHeight="5dp"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

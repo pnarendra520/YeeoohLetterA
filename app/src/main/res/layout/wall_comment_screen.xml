@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Narendra"
+               android:layout_centerInParent="true"
+               android:textColor="@color/app_color"
+               />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:src="@mipmap/grey"
+    android:layout_margin="10dp"
+    android:scaleType="fitXY"
+    />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/components"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:id="@+id/wall_comment"
+               android:drawableLeft="@drawable/comment"
+                android:text="10"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+                android:id="@+id/wall_comment_share"
+                android:drawableRight="@drawable/share"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:text="20"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:id="@+id/wall_love"
+                android:layout_marginRight="10dp"
+               android:drawableLeft="@drawable/like"
+                android:text="100"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_marginBottom="2dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="20dp">
+
+
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/emoji_btn"
+              android:layout_marginBottom="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentBottom="true"
+              android:src="@drawable/happiness"
+              android:scaleType="fitXY"
+              />
+
+          <com.github.data5tream.emojilib.EmojiEditText
+              android:layout_width="wrap_content"
+              android:background="@drawable/edit"
+              android:layout_gravity="bottom"
+              android:ems="14"
+              android:textCursorDrawable="@drawable/edittext_cursur"
+              android:layout_centerHorizontal="true"
+              android:hint="comment"
+              android:typeface="monospace"
+              android:id="@+id/emojicon_edit_text"
+              android:layout_toRightOf="@+id/emoji_btn"
+              android:padding="10dp"
+              android:maxLength="50"
+              android:gravity="start"
+              android:layout_alignParentBottom="true"
+              android:layout_height="wrap_content"
+              emojicon:emojiconSize="25sp" />
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/emoji_btn1"
+            android:layout_marginRight="5dp"
+             android:layout_alignParentRight="true"
+              android:layout_alignParentBottom="true"
+              android:src="@drawable/send_small"
+              android:scaleType="fitXY"
+              />
+
+      </RelativeLayout>
+  <!--        android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edit"
+        android:layout_gravity="bottom"
+        android:hint="write your comment"
+        android:layout_margin="5dp"
+        android:id="@+id/wall_comment_edittext"
+        android:padding="15dp"
+        android:maxLength="20"
+
+        android:gravity="start"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+         />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+  android:layout_marginRight="20dp"
+    android:id="@+id/wall_comment_send"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/send24"
+
+    />-->
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

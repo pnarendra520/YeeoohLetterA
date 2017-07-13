@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editprofile"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:titleEnabled="false">
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/dock"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                app:layout_collapseMode="parallax">
+
+                <LinearLayout
+                    android:id="@+id/lnr_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <yeeooh.android.app.com.yeeoohnewapp.polygon.PolygonImageView
+                        android:layout_width="60dp"
+                        android:src="@drawable/cat"
+                        app:poly_vertices="6"
+                        app:poly_border_width="3dp"
+                        app:poly_corner_radius="5"
+                        app:poly_rotation_angle="90"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/profile_imageview"
+                        app:poly_border="true"
+                        app:poly_shadow="true"
+                        app:poly_shadow_color="@color/colortabs"
+                        app:poly_border_color="@color/colortabs"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:id="@+id/profile_owner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center"
+                        android:text="Narendra"
+                        android:layout_marginTop="-8dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:layout_collapseMode="parallax" />
+
+                    <TextView
+                        android:id="@+id/profile_owner_name_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="25dp"
+                        android:gravity="center"
+                        android:text=" Some Tex here"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        app:layout_collapseMode="parallax" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/profile_top_left"
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@id/lnr_profile"
+                    android:drawableLeft="@drawable/hub"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:id="@+id/profile_hubs"
+                    android:text="hubs\n78"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/profile_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="@dimen/profile_top_left"
+                    android:layout_marginTop="80dp"
+                    android:layout_toLeftOf="@+id/lnr_profile"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/user16"
+                    android:gravity="center"
+                    android:text="Follow\n100"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="25"
+                    android:visibility="gone"
+                    android:textSize="09dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="MY PROFILE"
+                    android:textColor="@color/app_bottom_color_gray"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/profile_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv3"
+                    android:layout_toStartOf="@+id/iv3"
+                    android:drawableLeft="@drawable/visible"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="2.8k"
+                    android:textColor="@color/app_bottom_color_gray"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/back" />
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colortabs"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

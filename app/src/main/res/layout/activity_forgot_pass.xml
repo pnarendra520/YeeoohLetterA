@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+  android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/bgwall"
+        android:layout_centerInParent="true"
+        android:layout_height="170dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_centerHorizontal="true"
+        android:textColor="#1171a9"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/for_text"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+
+        />
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/for_logo"
+       android:layout_centerHorizontal="true"
+     android:layout_below="@+id/for_text"
+
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="5"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="Send"
+        android:id="@+id/for_buttoun"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@drawable/buttoun_custoum"
+        android:layout_below="@+id/for_edit1"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit"
+        android:layout_marginLeft="40dp"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:id="@+id/for_edit"
+        android:singleLine="true"
+        android:textColor="@color/app_bottom_color_gray"
+        android:inputType="textAutoComplete"
+        android:textColorHint="@color/colortabs"
+        android:imeOptions="actionNext"
+        android:hint="Enter Email"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/for_logo"
+        android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit"
+            android:inputType="textAutoComplete"
+            android:padding="6dp"
+            android:textColor="@color/app_bottom_color_gray"
+            android:layout_marginTop="8dp"
+            android:imeOptions="actionDone"
+            android:id="@+id/for_edit1"
+            android:textColorHint="#1171a9"
+            android:hint="Enter Email"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="18dp"
+            android:layout_below="@+id/for_edit"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
